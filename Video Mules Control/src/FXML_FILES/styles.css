@@ -1,0 +1,53 @@
+Button {
+	-fx-background-color:
+		linear-gradient(#d7454e 0%, #d9323e 25%, #c3222d 60%, #a91620 100%);
+	-fx-font-size:20px;
+	-fx-pref-width: fit-content;
+	-fx-pref-height:50px;
+	-fx-background-radius: 15px 15px;
+	-fx-padding: 5px;
+	-fx-font: bold 20px "Copperplate";
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 5,0,0,1 );
+}
+Button:hover {
+	-fx-background-color:
+			linear-gradient(#F98F96 0%, #FB7C86 25%, #E56C75 60%, #cb6068 100%);
+	-fx-text-fill: white;
+	-fx-border-radius: 15px 15px;
+	-fx-effect: dropshadow( gaussian , rgba(0,0,0,0.7) , 10,0,0,1 );
+}
+#btnAddNewOpponent, #btnAddNewPlayer, #btnDelete {
+	-fx-background-color: #CCCCCC;
+	-fx-text-fill: #FFFFFF;
+}
+#selectPlayer {
+	-fx-background-color: #efefef;
+}
+
+ListView, ChoiceBox {
+	-fx-font-family: 'Copperplate';
+	-fx-background-insets: 0;
+	-fx-padding: 0;
+}
+
+.list-cell:selected, .choice-box .menu-item:focused > .label  {
+	-fx-background-color: #cf1e1e;
+}
+
+.list-cell, .choice-box .menu-item {
+	-fx-background-color: white;
+}
+
+Label {
+	-fx-font-family: 'Copperplate';
+}
+TextField, PasswordField{
+	-fx-background-insets: 0;
+	-fx-padding: 0;
+	-fx-font: 20px "Copperplate";
+	-fx-accent: #cf1e1e;
+}
+#textFieldPassword, #textFieldUsername{
+	-fx-font: bold 20px "Copperplate";
+	-fx-alignment: center;
+}
